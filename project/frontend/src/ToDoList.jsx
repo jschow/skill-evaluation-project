@@ -11,7 +11,10 @@ export default function ToDoList() {
     setTask(event.target.value);
   }
 
-  function AddTask() {}
+  function AddTask() {
+    setTasks(t => [...t, task]);
+    setTask(""); // Clear the input field after adding the task
+  }
 
   function deleteTask(index) {}
 
