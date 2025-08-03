@@ -53,11 +53,11 @@ button {
 }
 
 .edit-task-button {
-  background-color: #65d6ff;
+  background-color: #77dbff;
 }
 
 .edit-task-button:hover {
-  background-color: #2e7f9c;
+  background-color: #3592b4;
 }
 
 input[type="text"] {
@@ -91,6 +91,16 @@ li {
   align-items: center;
 }
 
+li input[type="text"] {
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #221c1c;
+}
+
 .text {
   flex: 1;
+  margin-right: 10px;
 }
