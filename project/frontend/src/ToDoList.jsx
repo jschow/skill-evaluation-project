@@ -3,23 +3,20 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-export default function ToDoList(){
+export default function ToDoList() {
+  const [tasks, setTasks] = useState([]);
+  const [task, setTask] = useState("");
 
-    const [tasks, setTasks] = useState([]);
-    const [task, setTask] = useState("");
+  function handleInputChange(event) {}
 
+  function AddTask() {}
 
-    function handleInputChange(event) {
-    
-    }
+  function deleteTask(index) {}
 
-    function AddTask() {
-
-    }
-
-    function deleteTask(index) {
-    
-    }
-    
-    return (<></>); 
+  return (
+    <div className="todo-list">
+      <h1>JR's To-Do List</h1>
+      <div></div>
+    </div>
+  );
 }
