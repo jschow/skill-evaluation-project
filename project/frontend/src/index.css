@@ -83,7 +83,7 @@ h1 {
 }
 
 button {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   color: white;
   padding: 10px 20px;
@@ -100,21 +100,56 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.2rem;
 }
 .add-task-button:hover {
-  background-color: #4c8711;
+  background-color: #3d6c0e;
+
 }
 
 .delete-task-button {
-  background-color: #c67b73;
+  background-color: #cb7268;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 1.2rem;
 }
 .delete-task-button:hover {
   background-color: #b72200;
+}
+
+input[type="text"] {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #221c1c;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+li {
+  font-size: 1.4rem;
+  font-weight: semi-bold;
+  padding: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  display: flex;
+  /* max-width: 500px; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
 }
