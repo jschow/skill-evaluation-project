@@ -4,7 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 export default function ToDoList() {
-  const [tasks, setTasks] = useState(["Plan the project", "Write the code", "Test the application"]);
+  const [tasks, setTasks] = useState([]);
   const [task, setTask] = useState("");
 
   function handleInputChange(event) {
@@ -12,11 +12,16 @@ export default function ToDoList() {
   }
 
   function AddTask() {
-    setTasks(t => [...t, task]);
-    setTask(""); // Clear the input field after adding the task
+    if (task.trim() !== "") {
+      setTasks((t) => [...t, task]);
+      setTask("");
+    }
   }
 
-  function deleteTask(index) {}
+  function deleteTask(index) {
+    const taskList = tasks.filter((element, i) => i !== index);
+    setTasks(taskList);
+  }
 
   return (
     <div className="todo-list">
@@ -28,24 +33,24 @@ export default function ToDoList() {
           value={task}
           onChange={handleInputChange}
         />
-        <button 
-            className="add-task-button"
-            onClick={AddTask}>
+        <button className="add-task-button" onClick={AddTask}>
           Add
         </button>
       </div>
 
-        <ul>
-          {tasks.map((task, index) => (
-            <li key={index}>
-              <span className="text">{task}</span>
-              <button 
-                className="delete-task-button"
-                onClick={() => deleteTask(index)}>Delete</button>
-            </li>
-          ))}
-        </ul>
-
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index}>
+            <span className="text">{task}</span>
+            <button
+              className="delete-task-button"
+              onClick={() => deleteTask(index)}
+            >
+              Delete
+            </button>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
