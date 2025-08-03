@@ -36,7 +36,9 @@ export default function ToDoList() {
           {tasks.map((task, index) => (
             <li key={index}>
               {task}
-              <button onClick={() => deleteTask(index)}>Delete</button>
+              <button 
+                className="delete-task-button"
+                onClick={() => deleteTask(index)}>Delete</button>
             </li>
           ))}
         </ul>
