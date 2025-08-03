@@ -18,6 +18,7 @@ button {
   font-weight: bold;
   color: white;
   padding: 10px 20px;
+  margin-left: 5px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -33,6 +34,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
 }
+
 .add-task-button:hover {
   background-color: #548f72;
 }
@@ -50,6 +52,14 @@ button {
   background-color: #b72200;
 }
 
+.edit-task-button {
+  background-color: #65d6ff;
+}
+
+.edit-task-button:hover {
+  background-color: #2e7f9c;
+}
+
 input[type="text"] {
   width: 300px;
   padding: 10px;
@@ -65,7 +75,7 @@ ul {
   margin: 20px auto;
   display: flex;
   flex-direction: column;
-  max-width: 500px;
+  max-width: 600px;
 }
 
 li {
