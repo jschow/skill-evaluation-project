@@ -1,4 +1,4 @@
-import React, { useState ,  } from "react";
+import React, { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -8,7 +8,7 @@ export default function ToDoList() {
   const [task, setTask] = useState("");
   const [editingTaskIndex, setEditingTaskIndex] = useState(null);
   const [editingTaskText, setEditingTaskText] = useState("");
-
+  
   function handleInputChange(event) {
     setTask(event.target.value);
   }
