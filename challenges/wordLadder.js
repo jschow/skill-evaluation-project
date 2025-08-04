@@ -1,5 +1,6 @@
 /* 
     Word Ladder Challenge
+
     Input:
     beginWord = "hit"
     endWord = "cog"
@@ -7,3 +8,6 @@
     Output: 5
 */
 
+var wordLadder = function(beginWord, endWord, wordList) {
+
+};
